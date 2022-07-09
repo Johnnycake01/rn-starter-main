@@ -15,6 +15,11 @@ const HomeScreen = (props) => {
     title='Goto Counter Screen'
     onPress={()=>props.navigation.navigate('Counter')}
     />
+     <Button 
+    style={styles.buttonStyle}
+    title='Goto Color Screen'
+    onPress={()=>props.navigation.navigate('Color')}
+    />
     <CardDetail title="beach" imageSrc={require('../../assets/beach.jpg')}/>
     <CardDetail title="forest" imageSrc={require('../../assets/forest.jpg')}/>
     <CardDetail title=" mountain" imageSrc={require('../../assets/mountain.jpg')}/>

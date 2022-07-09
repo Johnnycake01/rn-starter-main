@@ -17,7 +17,7 @@ const TextComponent = (props) =>{
     return <View style={{margin:10}}> 
         <Text style={style.textStyle}>I am a boy without style </Text>
         <FlatList 
-        keyExtractor={(friend)=>{friend.name}}
+        keyExtractor={(friend)=>friend.name}
         data={great} 
         renderItem={({item}) =>{
             return <Text>{item.name}</Text>;
